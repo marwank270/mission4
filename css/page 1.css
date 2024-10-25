@@ -1,0 +1,95 @@
+html{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+}
+
+
+
+.nav1 {
+    margin: -10px;
+    margin-top: -10px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.nav1 ul {
+    padding: 30px;
+}
+
+
+.nav1 ul li{
+
+    display: inline;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.nav1 ul li a{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav1 ul li a:hover{
+    background-color: white;
+}
+
+
+
+.image1{
+    display: flex;
+    margin-left: 350px;
+}
+
+.para1{
+    height: 50%;
+    display: flex;
+    margin-left: 400px;
+    padding: 20px;
+}
+
+.nav2{
+    background-color: lightblue;
+}
+.nav2 ul{
+    padding: 30px;
+}
+.nav2 ul li{
+    display: inline;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.nav2 ul li a{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav2 ul li a:hover{
+    background-color: white;
+}
+main{
+
+}
+
+body{
+// <uniquifier>: Use a unique and descriptive class name
+
+.jetbrains-mono-<uniquifier> {
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+}
+
+footer{
+    background-color: lightblue;
+}
