@@ -1,95 +1,125 @@
+.jetbrains-mono-<MaFontSuperGenial> {
+	font-family: "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+}
+
 html{
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 200;
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 200;
+}
+
+h1{
+	background-color: darkslateblue;
+	border: 1px solid darkslateblue;
+	border-radius: 20px;
+	margin: 2px 0px;
+	padding: 20px 0px;
+	text-align: center;
+	color: antiquewhite;
+}
+
+.equipe img{
+	display: block;
+	height: 120px;
+	width: 120px;
+	border: 2px solid black;
+	border-radius: 100% ;
+	margin-left: auto;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#Ayay ul li{
+	list-style-type: none;
+}
+
+.equipe .Assiette {
+	display: inline;
+	justify-content: left;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 2%;
+	margin-right: auto;
+	border: 2px solid cadetblue;
+}
+.equipe .Ay {
+	display: inline;
+	justify-content: left;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 2%;
+	margin-right: auto;
+	border: 2px solid cadetblue;
+}
+#Ass, #Ayay {
+	display: block;
+	justify-content: right;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 2%;
+	margin-right: 25%;
+	padding-left: 15px;
+	border-radius: 10px;
+	background-color: palevioletred;
+}
+
+#Dori, #Mar {
+	display: block;
+	justify-content: right;
+	text-align: end;
+	list-style-type: none;
+	margin-left: 10%;
+	margin-right: 5%;
+	padding-right: 1%;
+	border: 1px solid palevioletred;
+	border-radius: 10px;
+	background-color: palevioletred;
 }
 
 
 
-.nav1 {
-    margin: -10px;
-    margin-top: -10px;
-    background-color: lightblue;
-    text-align: center;
+
+
+
+
+
+
+.Navigation ul li{
+	display: inline;
+	margin: 20px;
+	padding: 10px;
 }
 
-.nav1 ul {
-    padding: 30px;
+.Navigation{
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
-
-.nav1 ul li{
-
-    display: inline;
-    margin: 20px;
-    border-radius: 10px;
-    padding: 20px;
-
+.Navigation ul li a{
+	border: 2px solid darkslateblue;
+	padding: 10px 25px;
+	border-radius: 15px;
+	text-decoration: none;
+	color: antiquewhite;
+	font-size: large;
 }
 
-.nav1 ul li a{
-    border: 1px solid black;
-    padding: 30px;
-    border-radius: 10px;
-    padding: 20px;
-    text-decoration: none;
+a{
+	background-color: darkslateblue;
 }
-
-.nav1 ul li a:hover{
-    background-color: white;
-}
-
-
-
-.image1{
-    display: flex;
-    margin-left: 350px;
-}
-
-.para1{
-    height: 50%;
-    display: flex;
-    margin-left: 400px;
-    padding: 20px;
-}
-
-.nav2{
-    background-color: lightblue;
-}
-.nav2 ul{
-    padding: 30px;
-}
-.nav2 ul li{
-    display: inline;
-    margin: 20px;
-    border-radius: 10px;
-    padding: 20px;
-}
-.nav2 ul li a{
-    border: 1px solid black;
-    padding: 30px;
-    border-radius: 10px;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.nav2 ul li a:hover{
-    background-color: white;
-}
-main{
-
-}
-
-body{
-// <uniquifier>: Use a unique and descriptive class name
-
-.jetbrains-mono-<uniquifier> {
-    font-family: "JetBrains Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
+a:hover{
+	opacity: 0.7;
 }
 
 footer{
-    background-color: lightblue;
+	background-color: darkslateblue;
+	text-align: center;
+	color: antiquewhite;
+	border: 1px solid darkslateblue;
+	border-radius: 20px;
+	font-size: 12px;
 }
