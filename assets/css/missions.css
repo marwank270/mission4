@@ -1,0 +1,34 @@
+html {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+    background: black;
+    color: whitesmoke;
+}
+
+.nav_mission {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_mission li {
+    margin: 30px;
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.nav_mission li:hover {
+    background-color: aqua;
+    transition: 1s;
+}
+
+#rapports {
+    display: flex;
+    margin-left: 192px;
+    margin-right: 192px;
+}
+
+#rapport1, #rapport2, #rapport3 {
+}
