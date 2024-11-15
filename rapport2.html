@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/rapport2.css" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;1,200&display=swap');
+      </style>
+
+    <title>MISSION 2</title>
+</head>
+<body>
+
+    <nav class="Navigation">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="missions.html">Mission</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div>
+        <h1>
+            CONTEXTE :
+        </h1>
+    
+        <p>
+            L’objectif de cette mission est de commencer à <b>exploiter la base de données </b>
+    l’entreprise KDou pour pouvoir par la suite avoir des analyses et <b>indicateurs pertinents</b>. On
+    souhaite faire des requêtes avec le logiciel <b>Low Code Access</b>.
+        </p>
+    
+    </div>
+    
+
+
+    <div id="tablo">
+        <table id="tableau">
+            <caption>
+                <b>INDICATEURS</b>
+            </caption>
+            <thead>
+                <tr class="Indicateurs">
+                    <th><b>Indicateur 1</b></th>
+                    <th><b>Indicateur 2</b></th>
+                    <th><b>Indicateur 3</b></th>
+                    <th><b>Indicateur 4</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="wtd">
+                    <td>Donnez l’adresse du fournisseur Marie Delamare ?</td>
+                    <td>Dans quelles villes la clientèle est-elle la plus importante ? Citer les 3 premières</td>
+                    <td>Donner le prix moyen de vente des produits, le prix minimum et le prix maximum</td>
+                    <td>On veut le chiffre d’affaire total généré avec les informations dont on dispose</td>
+                </tr>
+                <tr class="wtd">
+                    <td>Pour ce premier indicateur, on nous demande de donner l'adresse de Marie Delamare mais ce dernier est très intéressant car réellement, il n'y a pas de Marie Delamare dans la base de données de KDOU. Cela est donc assez pertinent d'étudier ce genre de cas. En effet, on peut le voir grâce au résultat généré par ce code SQL :</td>
+                    <td>Ce deuxième indicateur nous demande de trouver les villes qui ont la clientèle la plus importante et de citer les 3 premières. Cet indicateur va permettre à KDOU de se donner une idée de qui sont ses clients "fidèles" et donc peut-être potentiellement offrir des réductions aux personnes habitant dans ces villes. Voici les 3 premières villes avec la clientèle la plus élevée générée par ce code SQL :</td>
+                    <td>Cet indicateur nous demande les prix moyens, minimum et maximum des produits. Le fait d'avoir ce genre d'information va permettre à l'entreprise KDOU d'avoir une idée sur leur chiffre d'affaires, donc c'est assez pertinent. Ce code SQL va permettre de nous donner le prix moyen, le prix minimum et maximum :</td>
+                    <td>Cet indicateur nous demande simplement le chiffre d'affaires total de l'entreprise KDOU. Cela va permettre à l'entreprise d'avoir une idée sur la redistribution de cet argent (salaire, exportations, importations, consommation). Ce code SQL permet de calculer le chiffre d'affaires de KDOU en fonction des commandes :</td>
+                </tr>
+                <tr class="wtd">
+                    <td class="S1">SELECT Fournisseur.Contact<br><br>FROM Fournisseur<br><br>WHERE (((Fournisseur.Contact)="Marie Delamare"));</td>
+                    <td class="S2">SELECT TOP 2 Client.VilleCli, Count(Client.VilleCli) AS CompteDeVilleCli<br><br>FROM Client<br><br>GROUP BY Client.VilleCli<br><br>ORDER BY Count(Client.VilleCli) DESC;</td>
+                    <td class="S3">SELECT Avg(Produit.PrixUnit) AS MoyenneDePrixUnit, Min(Produit.PrixUnit) AS MinDePrixUnit, Max(Produit.PrixUnit) AS MaxDePrixUnit<br><br>FROM Produit;</td>
+                    <td class="S4">SELECT Sum(Commande.Port) AS SommeDePort<br><br>FROM Commande;</td>
+                </tr>
+                <tr class="wtd">
+                    <td><img src="assets/img/rap2/img1.png" width="300px"></td>
+                    <td><img src="assets/img/rap2/img2.png" width="300px"></td>
+                    <td><img src="assets/img/rap2/img3.png" width="600px"></td>
+                    <td><img src="assets/img/rap2/img4.png" width="300px"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <footer>
+        Copyright &copy; Ayoub CHIKHI 2024 - 2025 All Rights Reserved
+    </footer>
+    
+</body>
+</html>

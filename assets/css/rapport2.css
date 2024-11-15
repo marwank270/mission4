@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+.jetbrains-mono{
+	font-family: "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+}
+
+:root {
+	--color-Nav: #483D8BFF;
+	--color-NavText: #FAEBD7FF;
+	--color-BackText: #8f515b;
+	--color-text: antiquewhite;
+}
+
+body {
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 200;
+	background: #C3B7CD;
+	margin: 1%;
+	padding: 1%;
+}
+
+.Navigation {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.Navigation ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Navigation ul li {
+	margin: 10px;
+	padding: 10px;
+}
+
+.Navigation ul li a {
+	border: 2px solid var(--color-Nav);
+	padding: 10px 25px;
+	border-radius: 15px;
+	text-decoration: none;
+	color: antiquewhite;
+	font-size: large;
+	display: block;
+}
+
+a {
+	background-color: var(--color-Nav);
+}
+a:hover {
+	opacity: 0.7;
+}
+
+div {
+	border: 1px solid black; 
+	margin: 25px 0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	font-size: 2em;
+	color: #2c3e50;
+}
+
+p {
+	font-size: 1.1em;
+	color: #333;
+}
+
+caption {
+	font-size: 3em;
+	font-weight: bold;
+	color: #2c3e50;
+	margin: 0;
+}
+
+table {
+	width: 100%;
+	margin: 1.25em 0;
+	border-collapse: collapse;
+}
+
+table, tr, td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table tr td {
+	padding: 5px;
+}
+
+.S1, .S2, .S3, .S4 {
+	text-align: left;
+}
+
+.wtd:hover {
+	cursor: inherit;
+	opacity: 0.8;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+img {
+	margin: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 600px;
+}
+
+h1, caption {
+	color: #2c3e50;
+}
+
+footer {
+	background-color: var(--color-Nav);
+	padding: 1em;
+	text-align: center;
+	color: var(--color-NavText);
+	border: 1px solid var(--color-Nav);
+	border-radius: 20px;
+	font-size: 0.8em;
+}
+
+@media screen and (max-width: 950px){
+	#tablo {
+		overflow-x: auto;	/*correction tableau "responsive"*/
+	}
+}
+
+@media (max-width: 768px) {
+	.Navigation ul {
+		flex-direction: column;
+	}
+
+	.Navigation ul li {
+		display: inline;
+		margin: 0;
+		padding: 0.625em;
+		
+	}
+
+	.Navigation ul li a {
+		font-size: medium;
+		padding: 0.625em 1.5625em;
+	}
+
+	table tr td {
+		font-size: 0.9em;
+	}
+
+	.caption {
+		font-size: 2em;
+	}
+	
+	h1 {
+		font-size: 1.8em;
+	}
+
+	footer {
+		font-size: 0.9em;
+	}
+}
+
+@media (max-width: 480px) {
+	.wtd {
+		font-size: 0.9em;
+	}
+
+	table, th, td {
+		font-size: 0.85em;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	footer {
+		font-size: 0.85em;
+	}
+}
