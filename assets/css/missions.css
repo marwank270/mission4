@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;1,200&display=swap');
+
 html {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 200;
@@ -5,30 +7,123 @@ html {
     color: whitesmoke;
 }
 
-.nav_mission {
-    border: 1px solid black;
+.nav_mission {                              /*nesting pour une meilleure lisibilité*/
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.nav_mission li {
-    margin: 30px;
-    padding: 15px;
-    text-decoration: none;
+    margin-top: 1.2em;
     border: 1px solid black;
-    color: whitesmoke;
-    border-radius: 10px;
+    ul {
+
+        li {
+            display: inline;
+            text-decoration: none;          /*retire les puces de la liste de la nav*/
+            border: 1px solid black;
+            color: whitesmoke;
+            border-radius: 15px;       
+            margin: 1.875em;                /*conversion de 30px en em*/
+            padding: 0.9375em;              /*conversion de 15px en em*/
+            a {
+                text-decoration: none;          /*retire les underline des liens*/
+                color: antiquewhite;
+            }
+        }
+        
+        li:hover {
+            background-color: aqua;
+            transition: 1s;
+        }
+    }
+
 }
-.nav_mission li:hover {
+
+#titre_p {
+    margin-top: 0.7em;                /*conversion de 30px en em*/
+    text-align: center;
+
+    color: black;
     background-color: aqua;
-    transition: 1s;
+    
+    border: 1px solid blue;
+    border-radius: 20px;
 }
 
-#rapports {
-    display: flex;
-    margin-left: 192px;
-    margin-right: 192px;
+#nos_rapports {
+    h2 {
+        padding-top: 7%;
+    }
+
+    #rapports {
+        display: flex;
+        flex-wrap: wrap;    /*pour que les éléments passent à la ligne si la largeur de l'écran est trop petite*/
+        justify-content: center;
+        border: 1px solid aqua;
+        border-radius: 15px;
+
+        #rapport1, #rapport2, #rapport3, #rapport4 {
+            padding: 15px;
+            margin: 15px;
+        }
+        
+        #rapport1:hover, #rapport2:hover, #rapport3:hover, #rapport4:hover {
+            background-color: aqua;
+        }
+
+        img {
+            height: fit-content;    /*ratio image automatique avec fit-content pour suivre la hauteur de la box parente*/
+        }
+    }
+    
+    
 }
 
-#rapport1, #rapport2, #rapport3 {
+footer {
+	font-size: 12px;
+	color: black;
+	text-align: center;
+    background-color: aqua;
+	border: 1px solid blue;
+	border-radius: 20px;
+
+    /*Fixation du footer en bas de page*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /*100% trop large ?*/
+}
+
+/*Media queries responsive design*/
+
+@media screen and (max-width: 700px) {
+    body {
+        #titre_p {
+            font-size: 1.5em;
+        }
+
+        .nav_mission {
+            width: auto;
+            ul {
+                li {
+                    margin: 0.5em;
+                    padding: 0.5em;
+                }
+            }
+        }
+        
+        #nos_rapports {
+            h2 {
+                font-size: 1em;
+            }
+
+            #rapports {
+                justify-content: center;
+                width: fit-content;                
+    
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
 }
