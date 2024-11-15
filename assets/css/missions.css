@@ -10,7 +10,6 @@ html {
 .nav_mission {                              /*nesting pour une meilleure lisibilité*/
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 1.2em;
     border: 1px solid black;
     ul {
@@ -38,7 +37,8 @@ html {
 }
 
 #titre_p {
-    margin-top: 0.7em;                /*conversion de 30px en em*/
+    margin: 2px 0px;
+    padding: 1em 0;
     text-align: center;
 
     color: black;
@@ -109,7 +109,7 @@ footer {
                 }
             }
         }
-        
+
         #nos_rapports {
             h2 {
                 font-size: 1em;
