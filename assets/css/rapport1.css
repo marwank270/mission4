@@ -1,0 +1,102 @@
+.jetbrains-mono{
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    --color-Nav: #483D8BFF ;
+    --color-NavText: #FAEBD7FF ;
+    --color-BackText: #f4d4d6;
+    --color-text: antiquewhite;
+}
+
+html{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+    background: #C3B7CD;
+    color: black;
+}
+
+.First {
+    margin: 1em 0;
+    padding-left: 1em;
+    border: 1px solid var(--color-BackText);
+    border-radius: 10px;
+    background-color: var(--color-BackText);
+}
+
+.Second {
+    margin: 1em 0;
+    padding-right: 1em;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    background-color: var(--color-BackText);
+    border-radius: 10px;
+}
+
+.Second h3{
+    margin: 1em 1%;
+}
+
+.Second li{
+    margin: 1%;
+}
+
+
+.Third {
+    margin: 1em 0;
+    padding-left: 1em;
+    border: 1px solid var(--color-BackText);
+    border-radius: 10px;
+    background-color: var(--color-BackText);
+}
+
+.Third table{
+    margin: 1em;
+}
+
+.Third table, .Third td, .Third th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+.Navigation{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Navigation ul li{
+    display: inline;
+    margin: 20px;
+    padding: 10px;
+}
+
+.Navigation ul li a{
+    border: 2px solid var(--color-Nav);
+    padding: 10px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: large;
+}
+
+a{
+    background-color: var(--color-Nav);
+}
+a:hover{
+    opacity: 0.7;
+}
+
+footer{
+    background-color: var(--color-Nav);
+    text-align: center;
+    color: var(--color-NavText);
+    border: 1px solid var(--color-Nav);
+    border-radius: 20px;
+    font-size: 0.8em;
+}

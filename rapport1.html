@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;1,200&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/rapport1.css">
+    <title>Mission 1 KDOU</title>
+</head>
+<body><!--Images manquantes-->
+<main>
+    <header>
+        <nav class="Navigation">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="missions.html">Mission</a></li>
+            </ul>
+        </nav>
+        <h1>Mission 1 KDOU</h1>
+        <hr>
+    </header>
+    <section>
+        <article class="First">
+            <header>
+                <h3>Le Contexte :</h3>
+                <p>KDou est une entreprise commerciale qui propose à ses clients des produits venant du monde entier.
+                    <br>Leurs clientèle principal se situent en France.
+                    <br> KDOU souhaite se donner une image plus <b>"éco-friendly"</b> en vendant des produit qui respect
+                    l'environnement,
+                    en prenant <b>le risque de vendre plus cher pour des produit éthique</b>.
+                    <br> KDou a fait appel à notre équipe afin de l’aider à prendre en charge l’évolution de son
+                    positionnement et son organisation.
+                    <br>Grâce a l'accès à leurs base de donnée nous avons pu leurs proposer des solutions permettant à
+                    cette
+                    entreprise de se donner une image plus "éco-friendly".
+                </p>
+            </header>
+        </article>
+
+        <article class="Second">
+            <header>
+                <h3>Notre études des données</h3>
+                <ol>
+                    <li>Analyse des relations entre les tables :</li>
+                        <ul>
+                            <li>La table Fournisseur est liée à la table Produit par la clé primaire "N°fournisseur".</li>
+                            <li>La table Produit est reliée à DétailCommande par "Réf produit".</li>
+                            <li>Chaque table possède des relations claires, par exemple, Commande et Clientèle
+                                sont connectées par "Code Client".</li>
+
+                            <li>Exemples : La catégorie Produits laitiers inclut des articles comme
+                                "Mozzarella di Giovanni" (29€).</li>
+                        </ul>
+                    
+                    <br>
+
+                    <li>Diversité de données :</li>
+                        <ul>
+                            <li>Les catégories produits incluent : Produits laitiers, Desserts, et Boissons.</li>
+                            <li>Spécification du conditionnements des produits qui sont variés : boîtes, sacs,
+                                bouteilles, pots, etc.</li>
+                            <li> Les clients ont leurs codes d'identification propre à eux</li>
+                        </ul>
+                </ol>
+                <ul></ul>
+            </header>
+        </article>
+
+        <article class="Third">
+            <header>
+                <h3>Point à améliorer :</h3>
+                <table>
+                    <tr>
+                        <th>Defaut</th>
+                        <th>Amélioration</th>
+                    </tr>
+
+                    <tr>
+                        <td>Les données saisis sont souvent incorrectes, incomplètes ou incohérentes.</td>
+                        <td>Faire des vérification régulière (ou au moins s’assurer que la saisie est bonne) de
+                            l’orthographe.
+                            des villes, pays, code postaux, nom/prénom, numéros de téléphone, régions, dates et la
+                            normalisation des % dans toutes les tables afin d’éviter les erreurs.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Nous avons très peu d'information concernant la clientèle.
+                        </td>
+                        <td>
+                            Une meilleure analyse de clientèle : on pourrait faire un graphique dit “camenbert” qui
+                            répertorie le nombre de clients par ville en pourcentage.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Manque d'un suivie de commande donc in ne sait pas ou se trouve le colis lorsqu'il est
+                            expédié.
+                        </td>
+                        <td>
+                            Créer une nouvelle catégorie dans la table “détails de commande” pour avoir
+                            un suivi/statut des commandes.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Manque de compréhension dans certains dans les tables.
+                        </td>
+                        <td>
+                            Détailler la signification de “port” dans la table “commande”.
+                        </td>
+                    </tr>
+                </table>
+            </header>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>Page web réalisé par Assia Benmakhlouf :)</p>
+</footer>
+
+</body>
+</html>
