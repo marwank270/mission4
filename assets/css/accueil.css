@@ -5,16 +5,9 @@ html{
     color: whitesmoke;
 }
 
-
-
-
 body{
 
-
-
 }
-
-
 
 .nav1{
     border: 1px solid black;
@@ -22,7 +15,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 
 .nav1 a{
     margin: 30px;
@@ -34,21 +26,14 @@ body{
     
 }
 
-
-
 .nav1 a:hover{
     background-color: aqua;
     transition: 1s;
 }
 
-
 .nav1 a::after{
 
-
-
-
 }
-
 
 .nav2{
     border: 1px solid black;
@@ -69,8 +54,6 @@ body{
     transition: 1s;
 }
 
-
-
 .article1{
     display: flex;
     margin-top: 30px;
@@ -84,7 +67,6 @@ body{
     padding-top: 40px;
 }
 
-
 .article2{
     display: flex;
     margin-top: 30px;
@@ -93,7 +75,6 @@ body{
 .article2 img{
     margin-left: 75%;
 }
-
 
 .article2 p{
     border: 1px solid pink;
@@ -107,4 +88,3 @@ footer{
     text-align: center;
     margin-top: 30px;
 }
-
