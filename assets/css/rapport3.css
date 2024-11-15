@@ -42,6 +42,10 @@ body {
 	font-size: large;
 }
 
+.tableau {
+    overflow-x: auto;
+}
+
 a{
 	background-color: var(--color-Nav);
 }
@@ -118,13 +122,20 @@ img {
     }
 
     .Navigation ul {
-        flex-direction: column;
-    }
+        display: flex;
+		flex-direction: column;
+	}
 
     .Navigation ul li {
-        margin: 10px 0;
-    }
+		display: inline;
+		margin: 0;
+		padding: 0.625em;
+	}
 
+	.Navigation ul li a {
+		padding: 0.625em 1.5625em;
+	}
+    
     table {
         font-size: 0.8em;
     }
@@ -148,9 +159,6 @@ img {
 
 /* Adaptation pour les très petits écrans */
 @media (max-width: 480px) {
-    .Navigation ul {
-        padding: 0;
-    }
 
     .Navigation ul li a {
         font-size: medium;
@@ -175,6 +183,3 @@ img {
     }
 }
 
-.tableau {
-    overflow-x: auto;
-}
