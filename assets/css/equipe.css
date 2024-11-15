@@ -1,13 +1,21 @@
-.jetbrains-mono-<MaFontSuperGenial> {
+.jetbrains-mono{
 	font-family: "JetBrains Mono", monospace;
 	font-optical-sizing: auto;
 	font-weight: 200;
 	font-style: normal;
 }
 
+:root {
+	--color-Nav: #483D8BFF ;
+	--color-NavText: #FAEBD7FF ;
+	--color-BackText: #8f515b;
+	--color-text: antiquewhite;
+}
+
 html{
 	font-family: 'JetBrains Mono', monospace;
 	font-weight: 200;
+	background: #C3B7CD;
 }
 
 h1{
@@ -63,7 +71,7 @@ h1{
 	margin-right: 25%;
 	padding-left: 15px;
 	border-radius: 10px;
-	background-color: palevioletred;
+	background-color: var(--color-BackText);
 }
 
 #Dori, #Mar {
@@ -74,9 +82,9 @@ h1{
 	margin-left: 10%;
 	margin-right: 5%;
 	padding-right: 1%;
-	border: 1px solid palevioletred;
+	border: 1px solid var(--color-BackText);
 	border-radius: 10px;
-	background-color: palevioletred;
+	background-color: var(--color-BackText);
 }
 
 .Navigation ul li{

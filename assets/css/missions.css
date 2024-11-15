@@ -1,50 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;1,200&display=swap');
 
+.jetbrains-mono{
+	font-family: "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+}
+
+:root {
+	--color-Nav: #483D8BFF ;
+	--color-NavText: #FAEBD7FF ;
+	--color-BackText: #8f515b;
+	--color-text: antiquewhite;
+}
+
 html {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 200;
-    background: black;
-    color: whitesmoke;
+    background: #C3B7CD;
 }
 
 .nav_mission {                              /*nesting pour une meilleure lisibilité*/
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 1.2em;
-    border: 1px solid black;
+    border: 1px solid var(--color-BackText);
     ul {
+        display: inline;
 
         li {
             display: inline;
             text-decoration: none;          /*retire les puces de la liste de la nav*/
-            border: 1px solid black;
-            color: whitesmoke;
+            border: 1px solid var(--color-Nav);
+            color: antiquewhite;
             border-radius: 15px;       
             margin: 1.875em;                /*conversion de 30px en em*/
             padding: 0.9375em;              /*conversion de 15px en em*/
             a {
                 text-decoration: none;          /*retire les underline des liens*/
-                color: antiquewhite;
+                background-color: var(--color-Nav);
             }
         }
         
         li:hover {
-            background-color: aqua;
-            transition: 1s;
+            opacity: 0.7;
         }
     }
+}
 
+.Navigation {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+
+    ul {
+        display: inline;
+        li {
+            display: inline;
+            margin: 1.25em;                 /*conversion de 20px en em*/
+            padding: 0.625em;               /*conversion de 10px en em*/
+            a {
+                border-radius: 15px;
+                border: 2px solid var(--color-Nav);
+                padding: 0.625em 1.5625em;
+                text-decoration: none;
+                color: antiquewhite;
+                font-size: large;
+                background-color: var(--color-Nav);
+            }
+
+            a:hover{
+                opacity: 0.7;
+            }
+        }
+    }
 }
 
 #titre_p {
-    margin-top: 0.7em;                /*conversion de 30px en em*/
+    margin: 2px 0px;
+    padding: 1em 0;
     text-align: center;
 
-    color: black;
-    background-color: aqua;
+    color: var(--color-text);
+    background-color: var(--color-Nav);
     
-    border: 1px solid blue;
+    border: 1px solid var(--color-text);
     border-radius: 20px;
 }
 
@@ -57,7 +97,7 @@ html {
         display: flex;
         flex-wrap: wrap;    /*pour que les éléments passent à la ligne si la largeur de l'écran est trop petite*/
         justify-content: center;
-        border: 1px solid aqua;
+        border: 1px solid var(--color-BackText);
         border-radius: 15px;
 
         #rapport1, #rapport2, #rapport3, #rapport4 {
@@ -66,7 +106,7 @@ html {
         }
         
         #rapport1:hover, #rapport2:hover, #rapport3:hover, #rapport4:hover {
-            background-color: aqua;
+            background-color: var(--color-BackText);
         }
 
         img {
@@ -81,8 +121,8 @@ footer {
 	font-size: 12px;
 	color: black;
 	text-align: center;
-    background-color: aqua;
-	border: 1px solid blue;
+    background-color: var(--color-Nav);
+	border: 1px solid var(--color-text);
 	border-radius: 20px;
 
     /*Fixation du footer en bas de page*/
@@ -100,7 +140,17 @@ footer {
             font-size: 1.5em;
         }
 
-        .nav_mission {
+        /*.nav_mission {
+            width: auto;
+            ul {
+                li {
+                    margin: 0.5em;
+                    padding: 0.5em;
+                }
+            }
+        }*/
+
+        .Navigation {
             width: auto;
             ul {
                 li {
@@ -109,7 +159,7 @@ footer {
                 }
             }
         }
-        
+
         #nos_rapports {
             h2 {
                 font-size: 1em;
@@ -124,6 +174,15 @@ footer {
                 }
             }
         }
-        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Navigation {
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
     }
 }
